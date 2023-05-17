@@ -1,7 +1,8 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<section id="comments" class="mt-2 mb-3">
-    <?php if ($this->allow('comment')): ?>
+<?php if ($this->allow('comment')): ?>
+    <hr>
+    <section id="comments" class="mt-2 mb-3">
         <div id="disqus_thread">
             <a href="#" class="button button-primary" onclick="loadDisqus();return false;">View / Make Comments</a>
         </div>
@@ -28,5 +29,5 @@
             }
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <?php endif; ?>
-</section>
+    </section>
+<?php endif; ?>
