@@ -1,8 +1,8 @@
 <div class="row">
     <div class="two columns" style="max-width: 50px">
         <h1 class="mt-2 mode">
-            <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
-            <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
+            <div onclick=setDarkMode(true) id="darkBtn"><?php $this->options->switchDark(); ?></div>
+            <div onclick=setDarkMode(false) id="lightBtn" class=hidden><?php $this->options->switchLight(); ?></div>
             <script >
                 if (localStorage.getItem('preferredTheme') == 'dark') {
                     setDarkMode(true)
