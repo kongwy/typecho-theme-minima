@@ -19,11 +19,11 @@
         <meta name="author" content="<?php $this->author(); ?>">
     <?php endif; ?>
 
-    <?php if (in_array('EnableSocialPreviewCard', $this->options->socialPreviewCard)): ?>
+    <?php if (in_array('SocialPreviewMeta', $this->options->socialMetaToogle)): ?>
         <!-- Open Graph / Twitter Card -->
         <meta property="og:image" content="<?php $this->options->themeUrl('source/images/thumbnail.jpg'); ?>">
         <meta property="og:site_name" content="<?php $this->options->title(); ?>" />
-        <meta property="og:type" content="<?php echo(($this->is('post') || $this->is('page')) ? 'article' : 'website') ?>" />
+        <meta property="og:type" content="<?php echo(($this->is('post') || $this->is('page')) ? 'article' : 'website'); ?>" />
         <meta property="og:title" content="<?php $this->archiveTitle([
                 'category' => _t('分类 %s 下的文章'),
                 'search'   => _t('包含关键字 %s 的文章'),
@@ -31,7 +31,7 @@
                 'author'   => _t('%s 发布的文章')
             ], '', ' - '); ?><?php $this->options->title(); ?>" />
 
-        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="<?php $this->options->twitterCardType() ?>">
         <meta name="twitter:site" content="<?php $this->archiveTitle([
                 'category' => _t('分类 %s 下的文章'),
                 'search'   => _t('包含关键字 %s 的文章'),
@@ -68,6 +68,9 @@
 
     <!-- Typecho Default Headers -->
     <?php $this->header(); ?>
+
+    <!-- User Custom Header Code -->
+    <?php $this->options->headerCode(); ?>
 </head>
 
 <body>

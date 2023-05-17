@@ -1,5 +1,5 @@
 <div class="row mt-2">
-    <?php if (in_array('ShowFooter', $this->options->footerBlock)): ?>
+    <?php if (in_array('Footer', $this->options->footerToggle)): ?>
         <div class="eight columns">
             <p id="madewith">Made with ❤ and
                 <a href="https://typecho.org/" target="_blank" rel="noreferrer">Typecho</a><?php if (!$this->options->placename || !$this->options->placelink): echo('.'); endif; ?>

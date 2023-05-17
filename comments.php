@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<?php if ($this->allow('comment')): ?>
+<?php if ($this->allow('comment') && $this->options->commentMode == 'disqus' && $this->options->disqusShortname): ?>
     <hr>
     <section id="comments" class="mt-2 mb-3">
         <div id="disqus_thread">
@@ -22,7 +22,7 @@
 
                     var d = document,
                         s = d.createElement('script');
-                    s.src = 'https://<?php $this->options->disqus(); ?>.disqus.com/embed.js';
+                    s.src = 'https://<?php $this->options->disqusShortname(); ?>.disqus.com/embed.js';
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 }

@@ -17,6 +17,9 @@
         nanobar.go(76);
         nanobar.go(100);
     </script>
+
+    <!-- User Custom Header Code -->
+    <?php $this->options->footerCode(); ?>
 </body>
 
 </html>
