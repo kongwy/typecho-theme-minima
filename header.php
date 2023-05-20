@@ -56,9 +56,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/normalize.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/skeleton.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/custom.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/minima.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/prism-dark.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/prism-line-numbers.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/custom.css'); ?>">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="<?php $this->options->themeUrl('source/images/favicon.png'); ?>">
