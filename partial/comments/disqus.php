@@ -1,6 +1,4 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-
-<?php if ($this->allow('comment') && $this->options->commentMode == 'disqus' && $this->options->disqusShortname): ?>
+<?php if ($this->allow('comment') && $this->options->disqusShortname): ?>
     <hr>
     <section id="comments" class="mt-2 mb-3">
         <div id="disqus_thread">
