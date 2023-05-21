@@ -6,6 +6,7 @@ button {
     min-width: 150px;
 }
 
+/* comments */
 #comments h1,
 #comments h2,
 #comments h3,
@@ -26,10 +27,7 @@ button {
     resize: vertical;
 }
 
-/* ------------------
- * Comment list
- * --------------- */
-
+/* comments list - layout */
 #comments, 
 #comments ol {
     list-style: none;
@@ -52,23 +50,11 @@ button {
     border-top: 1px solid #ddd;
 }
 
-#comments .respond {
-    margin-top: 2.5rem;
-}
-
 #comments .comment-reply {
     margin-bottom: 2.5rem;
 }
 
-#comments button,
-#comments .button {
-    margin-bottom: 2.5rem;
-}
-
-/* ------------------
- * Comment box
- * --------------- */
-
+/* single comment box - layout */
 .comment-meta a {
     color: #999;
 }
@@ -90,10 +76,7 @@ button {
     text-align: right;
 }
 
-.cancel-comment-reply {
-    float: right;
-}
-
+/* comments pagination */
 #comments .page-navigator {
     display: flex;
     gap: 2rem;
@@ -117,4 +100,18 @@ button {
     cursor: default;
     background-color: #0FA0CE;
     pointer-events: none;
+}
+
+/* comments respond - layout */
+.cancel-comment-reply {
+    float: right;
+}
+
+#comments .respond {
+    margin-top: 2.5rem;
+}
+
+#comments button,
+#comments .button {
+    margin-bottom: 2.5rem;
 }
