@@ -4,7 +4,9 @@
 
 <h2><?php $this->title(); ?></h2>
 
+<div class="line-numbers">
 <?php $this->content(); ?>
+</div>
 
 <?php $this->need('comments.php'); ?>
 

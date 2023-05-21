@@ -7,6 +7,9 @@
     </div>
 
     <script src="<?php $this->options->themeUrl('source/js/nanobar.min.js'); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script>
         var options = {
             classname: 'nanobar',
